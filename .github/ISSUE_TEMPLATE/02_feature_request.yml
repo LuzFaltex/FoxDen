@@ -1,0 +1,42 @@
+name: Feature Request
+description: Propose adding a new feature to FoxDen.
+title: "[FoxDen Proposal]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We welcome feature requests! We have a process to evaluate the value and shape of new features. There is an overview of our process [here](https://github.com/dotnet/runtime/blob/main/docs/project/api-review-process.md). This template will help us gather the information we need to start the review process.
+  - type: textarea
+    id: background
+    attributes:
+      label: Background and motivation
+      description: Why do we need the feature you are proposing? Do users face certain issues this feature would resolve? Provide an example use case (or even better, *your* use case).
+      placeholder: Purpose
+    validations:
+      required: true
+  - type: textarea
+    id: api-proposal
+    attributes:
+      label: Proposal
+      description: |
+        What does your proposal do? How does it work? What data does it interact with? The more information the better. This gets into the technical side of your proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: |
+        Have other ideas of how to address the concern? Want to discuss gotchas or caveats to your proposal? Want to ask questions to further hone your details? Do so here!
+    validations:
+      required: false
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: |
+        Please mention any risks that to your knowledge the proposal might entail, such as breaking changes, performance regressions, etc.
+      placeholder: Risks
+    validations:
+      required: false
